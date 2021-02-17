@@ -24,11 +24,11 @@
     </article>
 
     <article class="result">
-        <img id="img" class="mt-5" src="img/iamericano.jpg">
+        <img id="img" class="mt-5" src="img/drink.png">
         <h2 id="drink" class="mt-4 text-center">음료 이름</h2>
         <h3 id="explain" class="mt-3 text-center">설명</h3>
-        <h5 class="dessert mt-5 text-center">어울리는 디저트</h5>
-        <img id="img-des" class="rounded-circle mt-3" src="img/cheesecake.jpg">
+        <h5 class="dessert mt-5 text-center">어울리는 디저트는?</h5>
+        <img id="img-des" class="rounded-circle mt-3" src="img/dessert.png">
         <h3 id="des" class="mt-4 mb-5 text-center">디저트 이름</h3>
         <div class="addthis_inline_share_toolbox_jgy9"></div>
     </article>
@@ -43,23 +43,36 @@
     <script>
         var num = 1;
         var q = {
-            1: {"title": "Question 1", "type": "EI", "A": "E", "B": "I"},
-            2: {"title": "Question 2", "type": "EI", "A": "E", "B": "I"},
-            3: {"title": "Question 3", "type": "EI", "A": "E", "B": "I"},
-            4: {"title": "Question 4", "type": "SN", "A": "S", "B": "N"},
-            5: {"title": "Question 5", "type": "SN", "A": "S", "B": "N"},
-            6: {"title": "Question 6", "type": "SN", "A": "S", "B": "N"},
-            7: {"title": "Question 7", "type": "TF", "A": "T", "B": "F"},
-            8: {"title": "Question 8", "type": "TF", "A": "T", "B": "F"},
-            9: {"title": "Question 9", "type": "TF", "A": "T", "B": "F"},
-            10: {"title": "Question 10", "type": "JP", "A": "J", "B": "P"},
-            11: {"title": "Question 11", "type": "JP", "A": "J", "B": "P"},
-            12: {"title": "Question 12", "type": "JP", "A": "J", "B": "P"}
+            1: {"title": "Question 1", "type": "EI", "A": "ANSWER E", "B": "ANSWER I"},
+            2: {"title": "Question 2", "type": "EI", "A": "ANSWER E", "B": "ANSWER I"},
+            3: {"title": "Question 3", "type": "EI", "A": "ANSWER E", "B": "ANSWER I"},
+            4: {"title": "Question 4", "type": "SN", "A": "ANSWER S", "B": "ANSWER N"},
+            5: {"title": "Question 5", "type": "SN", "A": "ANSWER S", "B": "ANSWER N"},
+            6: {"title": "Question 6", "type": "SN", "A": "ANSWER S", "B": "ANSWER N"},
+            7: {"title": "Question 7", "type": "TF", "A": "ANSWER T", "B": "ANSWER F"},
+            8: {"title": "Question 8", "type": "TF", "A": "ANSWER T", "B": "ANSWER F"},
+            9: {"title": "Question 9", "type": "TF", "A": "ANSWER T", "B": "ANSWER F"},
+            10: {"title": "Question 10", "type": "JP", "A": "ANSWER J", "B": "ANSWER P"},
+            11: {"title": "Question 11", "type": "JP", "A": "ANSWER J", "B": "ANSWER P"},
+            12: {"title": "Question 12", "type": "JP", "A": "ANSWER J", "B": "ANSWER P"}
         };
         var result = {
             "ESTJ": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
-            "ENFP": {"drink": "따뜻한 아메리카노", "explain": "설명", "des": "마들렌", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
-            "ENTJ": {"drink": "과일차", "explain": "설명", "des": "스콘", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ESTP": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ESFJ": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ESFP": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ENFJ": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ENTJ": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ENFP": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ENTP": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ISTJ": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ISTP": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ISFJ": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "ISFP": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "INFJ": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "INTJ": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "INFP": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
+            "INTP": {"drink": "차가운 아메리카노", "explain": "차가운 아메리카노를 좋아하는 당신은 차가운 아메리카노를 좋아하는군요!", "des": "치즈케이크", "img": "iamericano.jpg", "img-des": "cheesecake.jpg"},
         }
         function start(){
             $(".start").hide();
